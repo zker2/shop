@@ -1,0 +1,99 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/20/10/19/shanghai-730890_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    overflow: hidden; /* Hide scrollbar */
+}
+
+.bigone {
+    margin: 15px 15px 5px 15px;
+    font-size: clamp(20px, 4vw, 40px); /* Adjust font size for small screens */
+    border: 3px solid rgba(0, 140, 255, 0.6);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    color: rgb(0, 140, 255);
+    text-shadow: 0 0 10px rgba(0, 140, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 18px; /* Reduce font size for mobile */
+}
+
+.box {
+    flex: 1;
+    min-width: 200px;
+    max-width: 350px;
+    padding: 10px;
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 215, 0);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+.order {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 12px rgba(128, 0, 255, 0.6);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgb(68, 0, 34);
+    color: rgb(128, 0, 255);
+}
+
+/* Mobile responsiveness for very small screens */
+@media (max-width: 480px) {
+    .bigone {
+        font-size: clamp(16px, 6vw, 30px); /* Smaller font for small screens */
+        padding: 10px;
+    }
+
+    .container {
+        padding: 5px;
+        font-size: 16px; /* Smaller font for the container */
+    }
+
+    .box {
+        min-width: 180px;
+        max-width: 300px;
+        padding: 8px;
+    }
+
+    .under {
+        min-width: 200px;
+        max-width: 90%;
+        height: 100px;
+        padding: 5px;
+    }
+
+    .order {
+        font-size: 14px; /* Smaller font for the order section */
+    }
+
+    a {
+        font-size: 0.8rem; /* Smaller font size for links */
+    }
+}

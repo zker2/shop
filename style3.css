@@ -1,0 +1,117 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2022/08/31/15/06/seoul-7423591_640.jpg);
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4;
+}
+
+.big {
+    background-image: url(https://i.ytimg.com/vi/pFPgA-vcnCQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBWQi6LQYSiGtJjmBDHO-jZnIpGWA);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: clamp(30px, 5vw, 50px); /* Responsive font size */
+    text-align: center;
+    color: #e6e6e6; /* Soft light color for text */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8); /* Strong shadow to simulate city lights */
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #ff00ff; /* Neon purple border */
+    padding: 20px;
+    margin-top: 180px;
+    opacity: 0.9;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8); /* Neon glow effect */
+    max-width: 100%;
+}
+
+.scanp {
+    text-align: center;
+    float: right;
+    margin-top: 65px;
+    width: 35%;
+    font-size: larger;
+    margin-right: 290px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    color: #ff00ff; /* Neon purple text */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6); /* Soft neon glow */
+}
+
+.info {
+    text-align: center;
+    font-size: clamp(25px, 4vw, 35px); /* Responsive font size */
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: rgba(30, 30, 50, 0.8); /* Dark blue-green background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6); /* Neon cyan glow */
+    color: #00ffcc; /* Neon cyan text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .big {
+        font-size: clamp(25px, 6vw, 45px); /* Adjust font size for tablets */
+        margin-top: 120px; /* Adjust margin for smaller screens */
+    }
+
+    .scanp {
+        width: 50%; /* Make the .scanp box wider on smaller screens */
+        margin-right: 50px;
+    }
+
+    .info {
+        font-size: clamp(20px, 5vw, 30px); /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .big {
+        font-size: clamp(20px, 7vw, 35px); /* Smaller font size for phones */
+        margin-top: 100px; /* Adjust margin for phones */
+    }
+
+    .scanp {
+        width: 80%; /* Make the .scanp box nearly full-width on phones */
+        margin-right: 10px;
+    }
+
+    .info {
+        font-size: clamp(18px, 6vw, 28px); /* Adjust font size for very small screens */
+        padding: 15px;
+    }
+}
+
+a {
+    background-color: #2e2e2e; /* Dark background for links */
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3); /* Soft cyan glow for links */
+    color: #ffffff; /* White text */
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    background-color: #4d4d4d;
+    color: #ffcc00; /* Neon yellow when clicked */
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #333333;
+    color: #00ffcc; /* Neon cyan on hover */
+}

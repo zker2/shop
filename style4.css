@@ -1,0 +1,123 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/20/09/05/night-view-7603839_1280.jpg);
+    align-items: center;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.big {
+    background-image: url(https://s.hdnux.com/photos/01/32/45/23/23745734/3/ratio3x2_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: clamp(30px, 5vw, 50px); /* Responsive font size */
+    text-align: center;
+    color: floralwhite;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4); /* Neon effect */
+    border-width: 3px;
+    border-style: groove;
+    border-radius: 15px;
+    border-color: chartreuse;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 0 15px 3px rgba(0, 255, 255, 0.7); /* Neon box shadow */
+    opacity: 0.9;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.scanp {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6); /* Neon effect */
+}
+
+.info {
+    text-align: center;
+    font-size: clamp(25px, 4vw, 35px); /* Responsive font size */
+    margin-top: 30px;
+    background-color: rgba(70, 7, 7, 0.8);
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.6); /* Neon box shadow */
+    max-width: 90%;
+    margin: 0 auto;
+    opacity: 0.95;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6); /* Neon text shadow */
+}
+
+a {
+    background-color: bisque;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    color: #333;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Neon effect */
+}
+
+a:link {
+    color: black;
+}
+
+a:active {
+    background-color: cornsilk;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: azure;
+    color: dimgrey;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8); /* Neon effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .big {
+        font-size: clamp(25px, 6vw, 45px); /* Smaller font size for tablets */
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .scanp {
+        margin-top: 20px;
+        width: 60%; /* Widen the .scanp box on tablets */
+    }
+
+    .info {
+        font-size: clamp(20px, 5vw, 30px); /* Adjust font size for smaller screens */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .big {
+        font-size: clamp(20px, 7vw, 35px); /* Smaller font size for phones */
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .scanp {
+        margin-top: 10px;
+        width: 80%; /* Make the .scanp box almost full-width on phones */
+    }
+
+    .info {
+        font-size: clamp(18px, 6vw, 28px); /* Adjust font size for small screens */
+        padding: 15px;
+    }
+}
